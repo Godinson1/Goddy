@@ -1,0 +1,55 @@
+$primary-color: #fff;
+$secondary-color: #4ad408;
+$black: black;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+//Learn functions for sass
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin media-xsm {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin media-sm {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and (min-width: 718px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}
